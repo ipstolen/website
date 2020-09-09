@@ -299,7 +299,7 @@ const Index = () => {
         </section>
         <section className="partners">
           <div className="section-header">
-            <h2 className="section__heading">Our Supporters</h2>
+            <h2 className="section__heading">Partners and Supporters</h2>
           </div>
           <div className="pure-g container">
             <div className="partners-container pure-u-1 pure-u-md-1-3">
