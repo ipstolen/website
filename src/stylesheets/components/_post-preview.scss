@@ -1,0 +1,37 @@
+.post-preview {
+  display: flex;
+
+  &__title {
+    margin: 0;
+    color: $brand-color;
+    font-size: 1.25rem;
+  }
+
+  .post-image {
+    margin: 0 1rem 1rem 0;
+    width: 100px;
+  }
+
+  &__subtitle {
+    margin: 0.1rem 0 1rem;
+    color: $dark-grey;
+    font-family: $text-font-stack;
+    font-weight: 300;
+  }
+
+  &__excerpt {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #565656;
+  }
+}
+
+@include respond-to("small") {
+  .post-preview {
+    .post-image {
+      width: 200px;
+    }
+  }
+}

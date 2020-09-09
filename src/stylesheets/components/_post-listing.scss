@@ -1,0 +1,9 @@
+.post-list {
+  &__item {
+    border-bottom: 1px solid $mid-grey;
+  }
+
+  &__item + &__item {
+    margin-top: 1rem;
+  }
+}

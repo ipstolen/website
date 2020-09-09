@@ -1,0 +1,43 @@
+.blog-container {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.blog-side-menu {
+  display: none;
+}
+
+@include respond-to("small") {
+  .blog-posts {
+    flex-basis: 70%;
+    margin-right: 2rem;
+  }
+
+  .blog-side-menu {
+    display: block;
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 250px;
+    background: rgba($color: $brand-color, $alpha: 0.1);
+    border-radius: 10px;
+    margin-left: auto;
+    padding: 1.5rem 1rem;
+
+    &__heading {
+      margin: 0;
+    }
+
+    .projects {
+      .heading {
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+
+      .link {
+        display: block;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

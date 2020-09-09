@@ -1,0 +1,28 @@
+.post-container {
+  padding-bottom: 1rem;
+}
+
+.post-header {
+  border-bottom: 1px solid $mid-grey;
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.post-date {
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.post-content {
+  font-size: 1.15rem;
+  line-height: 1.5;
+
+  ul {
+    list-style-type: initial;
+    padding-inline-start: 2rem;
+  }
+}

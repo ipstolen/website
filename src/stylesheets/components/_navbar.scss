@@ -1,0 +1,211 @@
+.navbar {
+  position: relative;
+  z-index: 1000;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+
+    .brand-logo {
+      width: 32px;
+      height: 32px;
+      background-image: url("/images/logo.png");
+      background-size: 32px 32px;
+      background-repeat: no-repeat;
+    }
+
+    .brand-name {
+      display: none;
+    }
+  }
+
+  &__nav {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0 -20px;
+
+    &.show {
+      transition: max-height 0.35s ease;
+      max-height: 500px;
+    }
+
+    &.show.collapsing {
+      transition: max-height 0.25s ease;
+      max-height: 0;
+    }
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .nav-item + .nav-item {
+    border-top: solid 1px $light-grey;
+  }
+
+  .nav-link {
+    color: $text-color;
+    font-weight: 500;
+    white-space: nowrap;
+    display: block;
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $brand-color;
+    }
+
+    &.active {
+      color: $brand-color;
+    }
+  }
+
+  .dropdown {
+    .dropdown-item {
+      border-top: solid 1px $light-grey;
+
+      .nav-link {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+  }
+
+  // TODO: Simplify hamburger styles
+  &__hamburger {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    background: 0 0;
+    border: none;
+    touch-action: manipulation;
+    cursor: pointer;
+
+    &::before,
+    &::after,
+    div {
+      position: absolute;
+      left: 15%;
+      height: 4px;
+      width: 70%;
+      background-color: $text-color;
+      border-radius: 10px;
+      content: "";
+    }
+
+    div {
+      top: calc(50% - 2px);
+    }
+
+    &::before {
+      top: 24%;
+    }
+
+    &::after {
+      bottom: 24%;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+@include respond-to("small") {
+  .navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+
+    &__brand {
+      display: flex;
+      align-items: center;
+      padding: 0;
+
+      .brand-logo {
+        width: 173px;
+        height: 30px;
+        background-image: url("/images/nav-logo-dark.png");
+        background-size: 173px 30px;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      margin: 0 0 0 auto;
+      max-height: 100%;
+      overflow: visible;
+
+      &.show {
+        display: flex;
+      }
+
+      &.show.collapsing {
+        transition: none;
+        max-height: 100%;
+      }
+    }
+
+    .nav-item {
+      border: none;
+
+      &--has-dropdown {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        &:hover {
+          .dropdown {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .nav-item + .nav-item {
+      margin-left: 1.1rem;
+      border: none;
+    }
+
+    .nav-link {
+      font-size: 1.1rem;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      min-width: 120px;
+      top: 100%;
+      padding: 0 10px;
+      text-align: center;
+      background: white;
+      border: 1px solid $mid-grey;
+
+      .dropdown-item {
+        border: none;
+      }
+
+      .dropdown-item + .dropdown-item {
+        border-top: solid 1px $light-grey;
+      }
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+}
