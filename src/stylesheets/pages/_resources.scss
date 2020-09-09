@@ -1,0 +1,123 @@
+.resources-side-menu {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  .dropdown-toggle {
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    position: absolute;
+    right: 20px;
+    top: 40%;
+  }
+
+  .dropdown {
+    max-height: 0;
+    overflow: hidden;
+
+    &.show {
+      transition: max-height 0.5s ease;
+      max-height: 500px;
+    }
+
+    &.collapsing {
+      transition: max-height 0.25s ease;
+      max-height: 0;
+    }
+  }
+
+  .dropdown-item {
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 0.5rem 0;
+    border-bottom: solid 1px $light-grey;
+    cursor: pointer;
+  }
+
+  .menu-link {
+    color: $text-color;
+    margin: 0;
+
+    @include on-event {
+      color: $brand-color;
+    }
+
+    &.active {
+      color: $brand-color;
+    }
+  }
+}
+
+.resources-posts {
+  margin-top: 1rem;
+}
+
+@include respond-to("small") {
+  .resources-container {
+    display: flex;
+    min-height: calc(100vh - 70px - 180px - 80px); // vh - nav - header - footer
+  }
+
+  .resources-content {
+    display: flex;
+    flex: 1 0 auto;
+  }
+
+  .resources-side-menu {
+    flex-basis: 20%;
+    margin: 0;
+    border-right: solid 2px $light-grey;
+    border-left: solid 2px $light-grey;
+
+    .dropdown-toggle {
+      display: none;
+    }
+
+    .dropdown {
+      max-height: 100%;
+      position: sticky;
+      top: 0;
+    }
+
+    .dropdown-item {
+      text-align: center;
+      font-size: 1.2rem;
+      border-bottom: solid 2px $light-grey;
+      padding: 0.5rem;
+    }
+
+    .menu-link {
+      color: $text-color;
+      padding: 0.8rem 0;
+      font-weight: 500;
+
+      @include on-event {
+        color: $brand-color;
+      }
+
+      &.active {
+        color: white;
+        border-radius: 2rem;
+        background: $brand-color;
+      }
+    }
+  }
+
+  .resources-posts {
+    flex-basis: 80%;
+    margin: 0 0 0 1.5rem;
+    padding: 1rem 0;
+  }
+}
