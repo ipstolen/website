@@ -32,7 +32,7 @@ Currently, there is no open source solution that addresses very large scale clou
 
 ### 2.2 Key Characteristics – fulfilling unkept promises of cloud computing in the open source
 
-<div style="text-align:center"><img style="width:300px;" src="https://i.imgur.com/FVo65Iw.png" alt="Key Characteristics" /></div>
+<div style="text-align:center"><img style="width:500px;" src="https://i.imgur.com/26TOJgA.png" alt="Key Characteristics" /></div>
 
 #### 2.2.1 A single pane of glass – unified provisioning & management of VMs & Containers
 
