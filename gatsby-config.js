@@ -2,7 +2,7 @@ const config = require("./data/SiteConfig");
 
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://centaurus-1b85c9.netlify.app`,
+    siteUrl: `https://www.centauruscloud.io/`,
   },
   plugins: [
     "gatsby-plugin-sass",
