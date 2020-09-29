@@ -27,7 +27,7 @@ const Blog = ({ data }) => {
               <h5 className="heading">Arktos</h5>
               <a
                 className="link"
-                href="https://github.com/futurewei-cloud/arktos"
+                href="https://github.com/centaurus-cloud/arktos"
               >
                 Github
               </a>
@@ -48,7 +48,7 @@ const Blog = ({ data }) => {
               <h5 className="heading">Mizar</h5>
               <a
                 className="link"
-                href="https://github.com/futurewei-cloud/mizar"
+                href="https://github.com/centaurus-cloud/mizar"
               >
                 Github
               </a>
