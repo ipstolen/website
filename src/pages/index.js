@@ -182,7 +182,7 @@ const Index = () => {
                       <span className="link-wrapper">
                         <a
                           className="github-button"
-                          href="https://github.com/futurewei-cloud/arktos"
+                          href="https://github.com/centaurus-cloud/arktos"
                           data-size="large"
                           aria-label="Star futurewei-cloud/arktos on GitHub"
                         >
@@ -204,7 +204,7 @@ const Index = () => {
                       <span className="link-wrapper">
                         <a
                           className="github-button"
-                          href="https://github.com/futurewei-cloud/mizar"
+                          href="https://github.com/centaurus-cloud/mizar"
                           data-size="large"
                           aria-label="Star futurewei-cloud/mizar on GitHub"
                         >
