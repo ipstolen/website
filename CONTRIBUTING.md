@@ -8,21 +8,21 @@ Here's a quick guide to a fairly standard GitHub workflow. This section is handy
 for people who don't use git or GitHub often, and just need a quick guide to
 get going:
 
-1. Fork the centaurus-cloud/website repo:
+1. Fork the centaurusinfra/website repo:
 
-   - Go to the [project repo](https://github.com/centaurus-cloud/website) on GitHub.
+   - Go to the [project repo](https://github.com/centaurusinfra/website) on GitHub.
    - Click **Fork** to make your own copy of the repo. GitHub creates a copy
      at `https://github.com/<your-github-username>/website`.
 
 2. Open a command window on your local machine.
 
 3. Clone your forked repo, to copy the files down to your local machine.
-   This example creates a directory called `centaurus-cloud` and uses SSH cloning to
+   This example creates a directory called `centaurusinfra` and uses SSH cloning to
    download the files:
 
    ```
-   mkdir centaurus-cloud
-   cd centaurus-cloud/
+   mkdir centaurusinfra
+   cd centaurusinfra/
    git clone git@github.com:<your-github-username>/website.git
    cd website/
    ```
@@ -30,7 +30,7 @@ get going:
 4. Add the upstream repo as a git remote repo:
 
    ```
-   git remote add upstream https://github.com/centaurus-cloud/website.git
+   git remote add upstream https://github.com/centaurusinfra/website.git
    git remote set-url --push upstream no_push
    ```
 
@@ -102,7 +102,7 @@ get going:
     keep authenticating to GitHub. You need to do this again after every reboot.
 
 Please remember read and observe the [Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md). and
-the [Contributor Guide](https://centaurus-cloud.netlify.com/docs/about/contributing/) on website
+the [Contributor Guide](https://centaurusinfra.netlify.com/docs/about/contributing/) on website
 provides more detailed instructions on how to get your ideas and bug fixes seen and accepted.
 
-[centaurus-cloud-website-repo]: https://github.com/seattle-cloud-lab/centaurus-cloud-website
+[centaurusinfra-website-repo]: https://github.com/CentaurusInfra/website
