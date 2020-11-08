@@ -1,6 +1,6 @@
-# centauruscloud.io
+# centaurusinfra.io
 
-Welcome to the GitHub repository for Centaurus' public website https://www.centauruscloud.io. This website is a general purpose project landing page and it also servers as a blog/resources hub for all project related information.
+Welcome to the GitHub repository for Centaurus' public website https://www.centaurusinfra.io/. This website is a general purpose project landing page and it also servers as a blog/resources hub for all project related information.
 
 # About
 
