@@ -9,11 +9,11 @@ import config from "../../data/SiteConfig";
 
 // Modify this to add/remove categories
 const RESOURCES_CATEGORIES = [
+  "FAQs",
   "Whitepaper",
   "Presentations",
   "Talks & Videos",
   "Events",
-  "FAQs",
 ];
 
 const Resources = ({ data }) => {
