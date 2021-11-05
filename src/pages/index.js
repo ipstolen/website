@@ -171,7 +171,7 @@ const Index = () => {
             </div>
 
             <div className="pure-g feature-container">
-              <div className="pure-u-1 pure-u-md-10-24 projects">
+              <div className="pure-u-1 pure-u-md-1-2 projects">
                 <div className="projects-container">
                   <div className="projects-header">
                     <h2 className="title">Centaurus Components</h2>
@@ -194,8 +194,7 @@ const Index = () => {
 
                     <p className="project__detail">
                       Arktos is a compute cluster management system designed for
-                      large scale clouds. It is evolved from Kubernetes to
-                      address key challenges of large scale clouds.
+                      large scale clouds. 
                     </p>
                   </div>
 
@@ -220,16 +219,58 @@ const Index = () => {
                       cloud.
                     </p>
                   </div>
+
+                  <div className="project">
+                    <div className="project-header">
+                      <h2 className="heading">Fornax</h2>
+                      <span className="link-wrapper">
+                        <a
+                          className="github-button"
+                          href="https://github.com/centaurusinfra/fornax"
+                          data-size="large"
+                          aria-label="Star centaurusinfra/fornax on GitHub"
+                        >
+                          Star
+                        </a>
+                      </span>
+                    </div>
+
+                    <p className="project__detail">
+                      Fornax is an autonomous, flexible, fault tolerant and scalable 
+                      edge computing framework.
+                    </p>
+                  </div>
+
+                  <div className="project">
+                    <div className="project-header">
+                      <h2 className="heading">Alnair</h2>
+                      <span className="link-wrapper">
+                        <a
+                          className="github-button"
+                          href="https://github.com/centaurusinfra/Alnair"
+                          data-size="large"
+                          aria-label="Star centaurusinfra/Alnair on GitHub"
+                        >
+                          Star
+                        </a>
+                      </span>
+                    </div>
+
+                    <p className="project__detail">
+                      Alnair is a self-learning elastic platform for AI workloads at scale, 
+                      with advanced scheduling and resource management strategy.
+                    </p>
+                  </div>
+
                 </div>
               </div>
 
-              <div className="pure-u-1 pure-u-md-14-24 feature-slide">
+              <div className="pure-u-1 pure-u-md-1-2 feature-slide">
                 <h1 className="feature-title" data-sal="slide-up">
                   Centaurus Features
                 </h1>
                 <p className="feature-subtitle" data-sal="slide-up">
-                  Powered by Arktos and Mizar, Centaurus provides next
-                  generation cloud solutions and enhanced cloud networking.
+                  Centaurus provides next generation cloud solutions and enhanced cloud networking.
                 </p>
                 <div className="slide">
                   <ul className="slide-list">
@@ -293,6 +334,78 @@ const Index = () => {
                         characteristics such as scalability, elasticity etc.
                       </p>
                     </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Autonomous & Fault Tolerant</h3>
+                      <p className="detail">
+                        Allows workload to continue functioning in time of both 
+                        network and edge cluster node failure. Edge clusters, 
+                        once online, accpet workload assignments automatically
+                        in the "zero touch" fashion.
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Flexible Edge Cluster Flavors</h3>
+                      <p className="detail">
+                        Supports running K8s, K3s, Arktos, etc. as edge cluster choice.
+                        No "locking-in" to any flavor. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Hierarchical Topology</h3>
+                      <p className="detail">
+                        Allows interconnecting and managing edge clusters in 
+                        a "flat" 1-layer structure, or a tree-like multi-layer
+                        hierarchy, whichever matches the user scenario. Your 
+                        edge scenario, your call. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Distributed Edge Networking</h3>
+                      <p className="detail">
+                        For 5G and MEC scenarios especially, supports virtualized
+                        distributed edge networking such as VPC, subnet, service 
+                        discovery, and direct edge-edge routing via XDP techology
+                        with high efficiency and performance. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Unified Elastic Framework</h3>
+                      <p className="detail">
+                        A unified framework for elastic and non-elastic distributed 
+                        training, resource rebalance with no interruption. 
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">Multifunctional Profiler</h3>
+                      <p className="detail">
+                        Provides multi-level resource utilization monitoring and 
+                        self-trigger trial job.
+                      </p>
+                    </li>
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">AI Oriented Scheduler</h3>
+                      <p className="detail">
+                        A learning based utilization driven strategy for co-scheduling
+                        and GPU affinity awareness. 
+                      </p>
+                    </li>
+
+
+                    <li className="slide-item" data-sal="slide-up">
+                      <h3 className="title">GPU Sharing</h3>
+                      <p className="detail">
+                        Built-in intercept library to support fractional GPU resource
+                        allocation with reliable and QoS guaranteed.
+                      </p>
+                    </li>
+
                   </ul>
                 </div>
               </div>
