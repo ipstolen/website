@@ -117,7 +117,7 @@ const Index = () => {
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/3sX_ZCadIas"
+              src="https://www.youtube.com/embed/f72wBxwe7w0"
               frameBorder="0"
               title="Centaurus Overview"
               className="pure-u-1 pure-u-md-12-24"
@@ -140,8 +140,8 @@ const Index = () => {
                 Build your next infrastructure with Centaurus
               </h1>
               <p className="subtitle" data-sal="slide-up">
-                Next generation cloud platform with better resource utilization
-                and reduced management overheads
+                Next generation infrastructure platform for large scale cloud
+                as well as for AI and Edge computing
               </p>
             </div>
 
@@ -156,16 +156,15 @@ const Index = () => {
 
               <div className="overview-text-wrapper pure-u-1 pure-u-md-1-2">
                 <p className="overview-text">
-                  Centaurus open source project is a cloud infrastructure
-                  platform that can be used to build your public or private
-                  cloud. It unifies the orchestration, network provisioning and
-                  management of cloud compute and network resources at regional
-                  scale. It offers the same API experience to provision and
-                  manage virtual machines, containers, serverless and other
-                  types of cloud resources. Centaurus combines traditional IaaS
-                  and PaaS layer into one infrastructure platform that can
-                  simplify your cloud management and reduce your management
-                  cost.
+                  Centaurus is an open source platform for building a scalable distributed
+                  cloud infrastructure that unifies the orchestration and management of VM,
+                  Container and Serverless workloads. As a cluster management platform,
+                  Centaurus provisions and manages the compute and network resources across 
+                  cloud data centers and edge sites at scale. Centaurus is also a self-learning
+                  elastic platform for AI workloads with optimized GPU sharing and scheduling
+                  algorithms. Centaurus aims to be the next generation cloud infrastructure that
+                  can simplify your cloud management and reduce your management cost in the age
+                  of Edge, AI, and 5G. 
                 </p>
               </div>
             </div>
